@@ -1,0 +1,21 @@
+{
+  "name": "miniapp-zx",
+  "version": "1.0.2",
+  "description": "zhixiaoyun & weixin mini app 's bridge",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "6uu",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "minapp-sdk": "^3.6.0",
+    "minapp-sdk-typings": "^3.6.0"
+  }
+}
