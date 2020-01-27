@@ -1,5 +1,3 @@
-///<reference path="./node_modules/minapp-sdk-typings/types/baas.d.ts" />
-
 // @ts-ignore
 require('miniapp-sdk');
 

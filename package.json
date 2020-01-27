@@ -1,10 +1,11 @@
 {
   "name": "miniapp-zx",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "zhixiaoyun & weixin mini app 's bridge",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "rm -rf ./lib && tsc"
+    "build": "./build.sh",
+    "publish": "./biild.sh && npm publish"
   },
   "files": [
     "lib"
