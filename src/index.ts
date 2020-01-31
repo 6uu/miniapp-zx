@@ -1,11 +1,16 @@
 // @ts-ignore
-require('miniapp-sdk');
+require('minapp-sdk');
 
 import modules, { IModules } from './modules/index';
-
-interface ZX extends IModules {
+interface Wx {
+  /**
+  * 知晓云 SDK 命名空间
+  */
+  BaaS: typeof WechatBaaS;
+}
+interface ZX extends IModules, Wx {
   /** 初始化 */
-  init: (clientID: string) => void,
+  init: (clientID: string) => void
 }
 
 let zx = {} as ZX;
@@ -17,8 +22,11 @@ interface IInitOptions extends WechatBaaS.InitOptions {
 }
 
 zx.init = (clientID: string, options?: IInitOptions): void => {
+  // @ts-ignore
   console.log('minizpp-zx start init ...')
   wx.BaaS.init(clientID, options);
 }
+
+zx.BaaS = wx.BaaS;
 
 export default zx;

@@ -5,3 +5,11 @@ export const isArray = value => {
     return Object.prototype.toString.call(value) === '[object Array]'
   }
 }
+
+export const matchProduct = (tableName: string | 'user') => {
+  if (tableName === 'user') {
+    return new wx.BaaS.User()
+  } else {
+    return new wx.BaaS.TableObject(tableName)
+  }
+}

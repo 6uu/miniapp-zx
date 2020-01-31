@@ -29,14 +29,14 @@ export interface ICreate {
    * creat 新增数据项
    * @param {String} tableName 表名
    * @param {Object|Array} data 要新增的数据
-   *  1. 不批量
+   *  - 不批量
    *    data = {
    *      name: 'apple',
    *      price: 1,
    *      desc: ['good'],
    *      amount: 0
    *    }
-   *  2. 批量
+   *  - 批量
    *    data = [
    *      { a: 2, b: 3 },
    *      { a: 99, b: 88 }
